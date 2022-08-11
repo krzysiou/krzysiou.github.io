@@ -1,8 +1,10 @@
 name: Deployment
-on: [push]
+on: 
+  push:
+    branches: [ master ]
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - run: npm install 
+      - uses: actions/checkout@v2
       - run: npm run deploy
