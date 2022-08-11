@@ -21,7 +21,13 @@ jobs:
         - name: Install dependencies
           run: npm install
 
-        - name: Deploy app
-          run: npm run deploy
+        - name: Build app
+          run: npm run build
           with:
            github_token: ${{ secrets.ACCESS_TOKEN }}
+
+        - name: deploy
+          uses: peaceiris/actions-gh-pages@v3
+          with:
+           github_token: ${{ secrets.ACCESS_TOKEN }}
+           publish_dir: ./dist
