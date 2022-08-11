@@ -16,9 +16,9 @@
         "@typescript-eslint"
     ],
     "rules": {
-        "indent": ["warn", 4],
+        "indent": ["warn", 2],
         "quotes": ["warn", "single"],
-        "semi": ["warn", "never"],
+        "semi": ["warn", "always"],
         "curly": ["warn", "all"],
         "no-multi-spaces": ["warn", {}],
         "no-multiple-empty-lines": ["warn", { "max": 1 }],
