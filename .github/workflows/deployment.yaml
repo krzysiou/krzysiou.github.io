@@ -10,10 +10,11 @@ jobs:
       name: Deploying to gh-pages
       runs-on: ubuntu-latest
       steps:
-        - name: Setup Node
-          uses: actions/setup-node@v1.1.0
+        - name: Use Node
+          uses: actions/setup-node@v2
           with:
-            version:  16.14.2
+            node-version: 16.14.2
+            cache: 'yarn'
 
         - name: Checkout branch
           uses: actions/checkout@v2
