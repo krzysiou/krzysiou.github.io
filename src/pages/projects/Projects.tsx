@@ -1,9 +1,9 @@
 import './Projects.css';
 
-export function Projects() {
+export const Projects: React.FC = () => {
   return (
     <div className="projects">
       <p>This is projects</p>
     </div>
   );
-}
+};
