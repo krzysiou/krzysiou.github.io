@@ -1,4 +1,4 @@
-import './Projects.css';
+import './Projects.scss';
 
 export const Projects: React.FC = () => {
   return (
