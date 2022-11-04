@@ -1,11 +1,10 @@
-name: 'Setup'
+name: setup
 
 runs:
   using: 'composite'
   steps:
     - name: Export Node Version
       run: echo "NODE_VERSION=$(cat .nvmrc)" >> $GITHUB_ENV
-      shell: bash
 
     - name: Setup Node 
       uses: actions/setup-node@v3
