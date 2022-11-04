@@ -1,3 +1,6 @@
+@import '../variables';
+
 .home {
-  color: blueviolet;
+  color: $primary-color;
+  margin: 0;
 }

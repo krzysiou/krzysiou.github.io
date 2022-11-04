@@ -1,0 +1,10 @@
+$dark-theme: false !default;
+$primary-color: #11da72 !default;
+$accent-color: #88ff90 !default;
+$background-color: rgb(255, 255, 255);
+
+@if $dark-theme {
+  $primary-color: #0a964e !default;
+  $accent-color: #1bc426 !default;
+  $background-color: rgb(24, 24, 24);
+}
