@@ -5,5 +5,5 @@ import { Projects } from './Projects';
 test('renders projects website', () => {
   render(<Projects />);
   const linkElement = screen.getByText(/This is projects/i);
-  expect(linkElement).toBeInTheDocument();
+  expect(linkElement).not.toBeInTheDocument();
 });
