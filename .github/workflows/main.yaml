@@ -17,20 +17,8 @@ jobs:
       - name: Test
         run: npm run test
 
-  deploy:
-    runs-on: ubuntu-latest
-    needs: [ test ]
-    steps:
-      - name: Checkout branch
-        uses: actions/checkout@v3
-
-      - name: Setup
-        uses: ./.github/actions/setup
-
-      - name: Build
-        run: npm run build
-
       - name: Deploy
+        needs: [ Test ]
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.ACCESS_TOKEN }}
