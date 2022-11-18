@@ -5,6 +5,7 @@ import {
   Route,
   Routes
 } from 'react-router-dom';
+import { Navbar } from './common/components/Navbar';
 
 import './index.scss';
 
@@ -16,11 +17,14 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/projects" element={<Projects/>}/>
-      </Routes>
-    </Router>
+    <div className='outer-container'>
+      <Navbar/>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/projects" element={<Projects/>}/>
+        </Routes>
+      </Router>
+    </div>
   </React.StrictMode>
 );

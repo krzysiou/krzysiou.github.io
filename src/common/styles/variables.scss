@@ -1,10 +1,19 @@
-$dark-theme: false !default;
-$primary-color: #11da72 !default;
-$accent-color: #88ff90 !default;
-$background-color: rgb(255, 255, 255);
+:root {
+  --outer-container-margin: 20vw;
+}
 
-@if $dark-theme {
-  $primary-color: #0a964e !default;
-  $accent-color: #1bc426 !default;
-  $background-color: rgb(24, 24, 24);
+.light {
+  --primary-color: #11da72;
+  --accent-color: #88ff90 ;
+  --bcg-color-main: #ffffff;
+  --bcg-color-sub: #c2f9c0;
+  --svg-color: invert(53%) sepia(99%) saturate(394%) hue-rotate(97deg) brightness(103%) contrast(93%);
+}
+
+.dark {
+  --primary-color: #0a964e;
+  --accent-color: #1bc426 ;
+  --bcg-color-main: #181818;
+  --bcg-color-sub: #1d1d1d;
+  --svg-color: invert(35%) sepia(91%) saturate(5714%) hue-rotate(146deg) brightness(103%) contrast(92%);
 }

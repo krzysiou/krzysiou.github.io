@@ -3,8 +3,6 @@ import './Home.scss';
 
 export const Home: React.FC = () => {
   return (
-    <div className="home">
-      <p>This is home</p>
-    </div>
+    <div className="home">This is home</div>
   );
 };

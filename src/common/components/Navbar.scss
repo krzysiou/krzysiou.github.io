@@ -1,0 +1,36 @@
+.navbar {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  .sections {
+    margin-right: 120px;
+
+    a {
+      padding: 5px;
+      margin: 0 20px;
+      text-decoration: none;
+      color: var(--primary-color);
+      transition: 300ms;
+
+      &:hover {
+        filter: brightness(120%);
+      }
+    }
+  }
+
+  .theme {
+    margin-right: 20px;
+
+    .theme-logo {
+      filter: var(--svg-color);
+      width: 30px;
+
+      &:hover {
+        filter: var(--svg-color) brightness(120%);
+      }
+    }
+  }
+}
