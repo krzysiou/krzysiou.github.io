@@ -5,5 +5,6 @@ import { Navbar } from './Navbar';
 test('renders home website', () => {
   render(<Navbar />);
   const linkElement = screen.getByText(/Home/);
+  
   expect(linkElement).toBeInTheDocument();
 });
