@@ -20,7 +20,7 @@ export const Navbar: React.FC = () => {
     <div className="navbar">
       <div className='sections'>
         <a href='/#/'>Home</a>
-        <a href='/#/projects'>Projects</a>
+        <a href='/#/projects'>Portfolio</a>
       </div>
       <div className='theme' onClick={toggleTheme}>
         {darkMode ? <img src={darkModeLogo} alt="dark mode logo" className='theme-logo'/> : <img src={lightModeLogo} alt="light mode logo" className='theme-logo'/>}
