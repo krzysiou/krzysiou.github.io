@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import './Navbar.scss';
 
-import darkModeLogo from '../../assets/dark_mode.svg';
-import lightModeLogo from '../../assets/light_mode.svg';
+import darkModeLogo from '../../../assets/dark_mode.svg';
+import lightModeLogo from '../../../assets/light_mode.svg';
 
 export const Navbar: React.FC = () => {
 
@@ -23,7 +23,7 @@ export const Navbar: React.FC = () => {
         <a href='/#/projects'>Projects</a>
       </div>
       <div className='theme' onClick={toggleTheme}>
-        {darkMode ? <img src={darkModeLogo} alt="dark mode logo" className='theme-logo'/> : <img src={lightModeLogo} alt="light mode logo" className='theme-logo'/>}
+        {darkMode ? <img src={lightModeLogo} alt="dark mode logo" className='theme-logo'/> : <img src={darkModeLogo} alt="light mode logo" className='theme-logo'/>}
       </div>
     </div>
   );
