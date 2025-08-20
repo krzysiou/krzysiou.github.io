@@ -17,6 +17,12 @@ jobs:
       - name: Setup
         uses: ./.github/actions/setup
 
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Run Type Check
+        run: npm run typecheck
+
       - name: Build
         run: npm run build
 

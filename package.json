@@ -5,6 +5,7 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "serve out",
+    "typecheck": "tsc --noEmit",
     "clean": "rm -rf .next && rm -rf out",
     "lint": "next lint"
   },
